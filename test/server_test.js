@@ -1,7 +1,20 @@
 // Unit testing for node server
 
-var Chai = require('chai').expect;
+var expect = require('chai').expect;
 
-var startServer = function() {
-   expect('server').to.exist;
-};
+
+describe('Mocha', function() {
+   it('should run our tests using npm', function() {
+   expect(true).to.be.ok;
+    });
+});
+
+describe('Server', function(){
+   it('should listen on port 7766', function() {
+    var server = require('../server.js');
+    
+    
+      expect(server.startServer()).to.equal(7766); 
+   });
+    
+});
