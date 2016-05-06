@@ -12,9 +12,17 @@ describe('Mocha', function() {
 describe('Server', function(){
    it('should listen on port 7766', function() {
     var server = require('../server.js');
-    
-    
-      expect(server.startServer()).to.equal(7766); 
+    expect(server.startServer()).to.equal(7766); 
    });
     
+});
+
+
+
+describe('JSON', function(){
+  it('should GET a JSON file', function(){
+    var source = require('../server.js');
+    expect(source.getJSON).to.be.ok;
+  });
+  
 });
