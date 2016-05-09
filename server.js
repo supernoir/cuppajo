@@ -4,6 +4,9 @@ var Express = require('express');
 var http = require('http');
 var app = Express();
 
+var PouchDB = require('pouchdb');
+var db = new PouchDB('cuppajo_db');
+
 
 // --- Start Server
 
