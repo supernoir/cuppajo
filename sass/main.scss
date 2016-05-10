@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+
+$primary-color: rgb(50,50,50);
+$background: rgb(120,120,20);
+
+body {
+    background-color: $background;
+    font-family: 'Merriweather', 'Georgia', serif;
+}
+
+h1{
+    color: white;
+}
+
+
