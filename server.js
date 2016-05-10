@@ -3,7 +3,6 @@
 var Express = require('express');
 var http = require('http');
 var app = Express();
-
 var cors = require("cors");
 var bodyParser = require('body-parser');
 
@@ -43,10 +42,6 @@ app.get('/', function(request, response) {
 
             });
             response.json(docs);
-            console.error(err);
-            console.log(response);
-            console.log(body);
-
         });  
 });
 
@@ -65,8 +60,7 @@ var startServer = function() {
     return port
 };
 
-var getJSON = function() {
-    
+var getJSON = function() {    
     return typesOfCoffee
 };
 
