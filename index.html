@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cuppaApp">
   <head>
     <meta charset="utf-8"/>
     <title>Cuppajo</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
       
-      <div class="content">
+      <div ng-controller="mainController" class="content">
           <div class="header">
-            <h1>Cuppajo</h1>
+            <input type="text" ng-bind="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+            <h1 ng-model="hello">Cuppajo {{hello}}{{byebye}}</h1>
             <h2>What would you like to drink today?</h2>
           </div>
-          <canvas id="canvas-scope" width="640" height="480"></canvas>
       </div>
   </body>
 </html>

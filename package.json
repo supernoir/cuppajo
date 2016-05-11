@@ -17,6 +17,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
+    "angular": "^1.5.5",
     "cors": "^2.7.1",
     "gulp": "^3.9.1",
     "nano": "^6.2.0",

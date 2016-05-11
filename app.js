@@ -1,8 +1,8 @@
 'use strict'
 
-document.write("Hello World");
+angular.module('cuppaApp', []).controller('mainController', ['$scope', function($scope) {
 
-let coffees = {
-    'name': 
+    $scope.hello = 'Hello';
+    console.log("Hello there");
     
-}
+}]);
